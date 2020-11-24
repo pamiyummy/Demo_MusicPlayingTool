@@ -3,8 +3,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 
-import controller;
-
 public class MainFrame extends JFrame {
 
     private MainFrame() {
@@ -19,5 +17,26 @@ public class MainFrame extends JFrame {
 
     public static void main(String argv[]) {
         new MainFrame();
+    }
+}
+
+public class Controller implements MouseListener {
+
+}
+
+public class View extends JPanel {
+
+}
+
+public class AudioModel {
+
+    private String audioPath;
+
+    public AudioModel(String inputPath) {
+        this.audioPath = inputPath;
+    }
+
+    public GetAudioPath() {
+        return this.audioPath;
     }
 }
